@@ -1,5 +1,5 @@
 字段	类型	        整理	             Null	默认	  额外	  
-id	  int(11)                          否           auto_incrementse 
+id	  int(11)                             否           auto_incrementse 
 name	varchar(200)	latin1_swedish_ci	 否	  未添加	
 qq	  varchar(200)	latin1_swedish_ci	 否		    	  
 lv	  varchar(200)	latin1_swedish_ci	 否		   	    
