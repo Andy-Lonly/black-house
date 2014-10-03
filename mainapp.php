@@ -18,6 +18,8 @@
     <?php include "struct/deleteRecord.php"; //删除记录的区块 ?>
 <?php } elseif($_GET['mode'] == 'script') { //script代表实际要对纪录进行修改 ?>
 	<?php include "struct/scriptAction.php"; //实际运行数据库程序的区块 ?>
+<?php } elseif($_GET['mode'] == 'view'){ //view就是说浏览模式~ ?>
+	<?php include "struct/viewRecord.php"; //查看所有记录的区块 ?>
 <?php } ?>
 </body>
 </html>
