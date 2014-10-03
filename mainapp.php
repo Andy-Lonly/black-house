@@ -19,7 +19,7 @@
 自动在添加时添加当前登录帐号名称模块
 mysql数据库连接模块
 等待补充*/
-include(dblink.php)
+include(dblink.php)；
 $name = $_POST["name"];
 $qq = $_POST["qq"];
 $lv = $_POST["lv"];
