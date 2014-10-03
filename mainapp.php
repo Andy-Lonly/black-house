@@ -15,6 +15,7 @@
 <body>
 <?php if($_GET['mode'] == false){ //啥都没有，表示是主页 ?>
 	<?php include "struct/addNewName.php"; //添加新纪录的区块 ?>
+    <?php include "struct/deleteRecord.php"; //删除记录的区块 ?>
 <?php } elseif($_GET['mode'] == 'script') { //script代表实际要对纪录进行修改 ?>
 	<?php include "struct/scriptAction.php"; //实际运行数据库程序的区块 ?>
 <?php } ?>
