@@ -23,5 +23,22 @@
 <?php } ?>
 
 <?php if($_GET['action'] == 'deleteRecord'){ ?>
-	
+	<?php if(!$_POST['deleteBy'] || !$_POST['value']){ ?>
+    	<b>很抱歉，您填写的信息不完整</b><br>
+    <?php } else { ?>
+    	<?php
+			if($_POST['deleteBy'] == 'username'){
+				$columnSub = 'username';
+			} elseif ($_POST['deleteBy'] == 'qqnum'){
+				$columnSub = 'qq';
+			}
+			$result = $dbHandler->runQuery("DELECT FROM andy_info WHERE $columnSub='$_POST[value]'","affectedrows");
+		?>
+        <?php if($result) { ?>
+        	<b>成功，总共删除了<?php echo $result; ?>条记录</b><br>
+        <?php } else { ?>
+        	<b>失败，请检查您输入的信息是否有误</b><br>
+        <?php } ?>
+    <?php } ?>
+    <a href="<?php echo $_SERVER['HTTP_REFERER'];?>">返回上一页</a>
 <?php } ?>
