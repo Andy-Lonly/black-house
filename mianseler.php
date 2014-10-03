@@ -11,9 +11,11 @@
 <br /><input type="submit" name="up" value="提交" />
 <input type="reset" name="r" value="重置" />
 <?php
+include(dblink.php)；
 $qq = $_POST["seler"];
 $sql = 'SELECT `name`, `qq`, `lv`, `info` FROM `andyinfo` WHERE `qq` = CONVERT(_utf8 \'这里放置$qq吗？<?php */?>\' USING latin1) COLLATE latin1_swedish_ci ORDER BY `lv` ASC';
 /*不确定这样对不对*/
+mysql_close($link);
 ?>
 </body>
 </html>
