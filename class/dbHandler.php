@@ -21,7 +21,7 @@
 		
 		public function runQuery($query,$resultType){
 			//用来运行Query的Method
-			//Result Type是返回的结果类型，可以选择：array、insertid或者bool
+			//Result Type是返回的结果类型，可以选择：array、insertid或者bool还有numrows
 			$dbResult = mysqli_query($this->connectionIdentifier,$query);
 			if($dbResult){
 				if($resultType == 'array'){
@@ -34,6 +34,8 @@
 					return array("val"=>mysqli_insert_id());
 				} elseif ($resultType == 'bool') {
 					return true;	
+				} elseif ($resultType == 'numrows') {
+					return mysqli_num_rows($dbResult);	
 				}
 			} else {
 				return false;	
