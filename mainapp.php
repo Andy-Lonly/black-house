@@ -13,6 +13,7 @@
 <title>黑屋系统</title>
 </head>
 <body>
+<?php include "struct/global/header.php"; //全局Header ?>
 <?php if($_GET['mode'] == false){ //啥都没有，表示是主页 ?>
 	<?php include "struct/addNewName.php"; //添加新纪录的区块 ?>
     <?php include "struct/deleteRecord.php"; //删除记录的区块 ?>
