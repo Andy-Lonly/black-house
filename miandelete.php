@@ -11,7 +11,9 @@
 <br /><input type="submit" name="up" value="提交" />
 <input type="reset" name="r" value="重置" />
 <?php
+include(dblink.php)；
 /*要求删除时，删除者与数据库的adder是同一人*/
+mysql_close($link);
 ?>
 </body>
 </html>
