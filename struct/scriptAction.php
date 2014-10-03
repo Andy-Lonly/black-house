@@ -21,3 +21,7 @@
     <?php } ?>
     <a href="<?php echo $_SERVER['HTTP_REFERER'];?>">返回上一页</a>
 <?php } ?>
+
+<?php if($_GET['action'] == 'deleteRecord'){ ?>
+	
+<?php } ?>

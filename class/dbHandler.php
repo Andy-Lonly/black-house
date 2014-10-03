@@ -22,6 +22,7 @@
 		public function runQuery($query,$resultType){
 			//用来运行Query的Method
 			//Result Type是返回的结果类型，可以选择：array、insertid或者bool还有numrows
+			//还可以是affectedrows。。。。
 			$dbResult = mysqli_query($this->connectionIdentifier,$query);
 			if($dbResult){
 				if($resultType == 'array'){
@@ -36,6 +37,8 @@
 					return true;	
 				} elseif ($resultType == 'numrows') {
 					return mysqli_num_rows($dbResult);	
+				} elseif ($resultType == 'affectedrows') {
+					return mysqli_affected_rows($dbResult);	
 				}
 			} else {
 				return false;	
