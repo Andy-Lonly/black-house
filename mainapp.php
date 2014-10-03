@@ -19,6 +19,7 @@
 自动在添加时添加当前登录帐号名称模块
 mysql数据库连接模块
 等待补充*/
+include(dblink.php)
 $name = $_POST["name"];
 $qq = $_POST["qq"];
 $lv = $_POST["lv"];
@@ -35,6 +36,7 @@ $strsql="INSERT INTO andy_info(name,qq,lv,info) VALUES
  $result = @mysql_query($strsql);
 		/*判断是否成功*/
 	if($result && mysql_affected_rows()>0){echo "OK";}else{echo "error，你已经添加或者数据已经存在".mysql_error();}
+mysql_close($link);
 ?>
 </body>
 </html>
