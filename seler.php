@@ -1,6 +1,6 @@
 <html>
 <body>
-<!--下面是表单 -->
+<!--下面是表单哦 -->
 <form name="seler" method="post" action="mianseler.php">
 <input type="text" name="seler" value="帐号" size="15" maxlength="200" />
 <br />
