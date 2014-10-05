@@ -43,6 +43,9 @@ A：登录系统由furaiguburu开发的商业级别的系统（感激不尽）�
 Q：<strong>什么是niiUserSystem Enterprise？ 我可以使用吗？</strong><br>
 A：1，niiUserSystem Enterprise是商业级别的用户登录以及动作记录系统，是niiFramework Enterprise的分支。原本只用于Niyume，但是在深度合作的Web Application中也会植入此系统。2，对不起，niiUserSystem Enterprise并不对公众开放。但是niiUserSystem Basic是开源的项目。
 
+Q：<strong>niiUserSystem Enterprise和Basic的区别是什么？</strong><br>
+A：如果用于普通的网络App的话，区别并不明显。但是Enterprise有着更加强大的安全保护措施，比如Login Token（密匙式登录），Realtime Logging（实时记录），Browser Identifier（浏览器标识符），High Level Bruce Attack Detection（高级别暴力破解检测）
+
 #黑屋系统Preview！
 ##Alpha初版（内部版本）
 #### 登录界面
