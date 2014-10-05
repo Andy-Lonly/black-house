@@ -8,7 +8,7 @@
 		private $connectionIdentifier;
 		public $connectionError;
 		
-		function __costruct($host,$username,$password,$name){
+		function __construct($host,$username,$password,$name){
 			//Constructor, 在这里就连接数据库了
 			//请通过使用$this->connectionError检测是否失败
 			$this->connectionIdentifier = mysqli_connect($host,$username,$password,$name);

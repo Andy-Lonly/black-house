@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* 主样式表 */
+
+body {
+	margin:0px;
+	padding:0px;	
+}
+
+#headerContainer {
+	width:100%;
+	height:auto;
+	background-color:#3778DC;
+	color:white;
+	text-align:center;
+	box-shadow:#8C8C8C 0px 0px 10px;
+	padding-top:10px;
+	padding-bottom:10px;
+	position:relative;
+	z-index:10;
+	font-family:Microsoft YaHei;
+	font-size:18px;
+}
+#headerMenuExpand{
+	display:none;	
+}
+
+#headerSubContainer {
+	position:relative;
+	z-index:9;
+	background-color:#F3F3F3;
+	color:#3778DC;
+	height:auto;
+	width:100%;
+	text-align:center;
+}
+
+#headerSubContainer li {
+	padding-top:10px;
+	padding-bottom:10px;
+	width:auto;
+	padding-left:10px;
+	padding-right:10px;
+	color:#3778DC;
+	font-size:13px;
+	font-family:Microsoft YaHei;
+	display:inline-block;
+	cursor:pointer;
+}
+
+#headerSubContainer li:hover {
+	background-color:#CBCBCB;
+}
+
+#headerSubContainer a:link {
+	color:#3778DC;
+	text-decoration:none;
+}
+#headerSubContainer a:hover {
+	color:#3778DC;
+	text-decoration:none;
+}
+#headerSubContainer a:active {
+	color:#3778DC;
+	text-decoration:none;
+}
+#headerSubContainer a:visited {
+	color:#3778DC;
+	text-decoration:none;
+}
+
+/*登录界面Style*/
+#loginInterfaceContainer {
+	width:600px;
+	height:auto;
+	border-radius:5px;
+	margin-top:50px;
+	margin-left:50%;
+	position:relative;
+	left:-300px;
+	background-color:white;
+	box-shadow:#B0B0B0 0px 0px 20px;
+	padding-bottom:10px;
+	overflow:hidden;
+}
+#loginInterfaceTitle {
+	width:100%;
+	height:45px;
+	background-color:#3778DC;
+	color:white;
+	line-height:45px;
+	font-size:16px;
+	text-align:center;
+	font-family:Microsoft YaHei;
+}
+
+.stdTextbox {
+	background-color:white;
+	border:#cccccc 1px solid;
+	border-radius:3px;
+	box-shadow:#eeeeee 0px 2px 2px inset;
+	outline:none;
+	height:34px;
+	padding-left:10px;
+	padding-right:10px;
+	font-family:Microsoft YaHei;
+	font-size:13px;
+	text-align:center;
+}
+
+.stdTextbox:focus {
+	background-color:#ffffff;
+	box-shadow:#eeeeee 0px 2px 2px inset, #dcedfb 0px 0px 5px;
+	border:#51a7e8 1px solid;
+}
+.stdBlueButton {
+	width:auto;
+	border:none;
+	border-radius:5px;
+	height:40px;
+	text-align:center;
+	color:white;
+	font-family:Microsoft YaHei;
+	font-size:14px;
+	background-color:#3A73D5;
+	padding-left:20px;
+	padding-right:20px;
+	box-shadow:#D7E2FF 0px 0px 10px;
+	cursor:pointer;
+}
