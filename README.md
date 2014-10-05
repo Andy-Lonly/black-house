@@ -37,3 +37,7 @@ A：各个作者在隐私条例或服务条例里都有提到这个问题，如�
 
 Q：黑屋系统是否安全，如果被人乱添加怎么办？<br>
 A：登录系统由furaigubur开发的商业级别的系统（感激不尽），而且如果阁下认为记录是乱添加的，阁下可以申诉，我们是有记录的。
+
+#黑屋系统Preview！
+###Alpha初版 登录界面
+<img src="http://40c4ada26c9f76b90200-7237e5908f4a8314ee6a2ee2d1cf897e.r10.cf6.rackcdn.com/blackhouseLogin1.png" />
