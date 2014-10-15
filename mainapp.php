@@ -21,6 +21,9 @@
 	<?php include "struct/scriptAction.php"; //实际运行数据库程序的区块 ?>
 <?php } elseif($_GET['mode'] == 'view'){ //view就是说浏览模式~ ?>
 	<?php include "struct/viewRecord.php"; //查看所有记录的区块 ?>
-<?php } ?>
+<?php } 
+elseif($_GET['mode']=='select'){//select判断搜索mod?>
+       <?php include "struct/select.php";/*加载搜索页面*/ ?>
+<?php}
 </body>
 </html>
