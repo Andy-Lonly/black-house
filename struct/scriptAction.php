@@ -42,3 +42,5 @@
     <?php } ?>
     <a href="<?php echo $_SERVER['HTTP_REFERER'];?>">返回上一页</a>
 <?php } ?>
+
+<?php if($_GET['action']=='selectinfo'){/*后面放置搜索程序*/
