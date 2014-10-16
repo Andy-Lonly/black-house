@@ -1,12 +1,12 @@
 <html>
 <body>
 <!--下面是表单哦 -->
-<form name="seler" method="post" action="mianseler.php">
+<form method="post" id="selectinfo" action="?mode=script&action=selectinfo">
 <input type="text" name="seler" value="帐号" size="15" maxlength="200" />
 <br />
 <br /><input type="submit" name="up" value="提交" />
 <input type="reset" name="r" value="重置" />
-<!--下面开始是查询程序 -->
+<!--下面开始是查询程序 需要放置-->
 <?php
 $qq = $_POST["seler"];/* 接受表单信息 */
 
