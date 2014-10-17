@@ -1,0 +1,17 @@
+/*©Andy-Lonly*/
+@charset "utf-8";
+.formxd {
+	height: 4cm;
+	width: 10cm;
+	text-align:center;
+	border:10px solid #dedede;
+	border-radius:10px 13px 4px 17px;
+	box-shadow:5px 5ox 8px #06c;
+	background:rgba(225,225,225,0.64);
+	top: 10%;
+	position: relative;
+	left: 27%;
+}
+.forminput {box-shadow:inset 3px 2px 1px #ACACAC;
+border-radius:6px;
+}
