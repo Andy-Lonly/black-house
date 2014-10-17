@@ -16,15 +16,17 @@
 	}
 ?>
 
-<?php include "struct/global/header.php"; //全局Header ?>
-
-<?php if($_GET['mode'] == false){ //啥都没有，表示是主页 ?>
-	<?php include "struct/security/login.php"; //添加新纪录的区块 ?>
-<?php } elseif($_GET['mode'] == 'script') { //script代表实际要对纪录进行修改 ?>
-	<?php include "struct/scriptAction.php"; //实际运行数据库程序的区块 ?>
-<?php } elseif($_GET['mode'] == 'view'){ //view就是说浏览模式~ ?>
-	<?php include "struct/viewRecord.php"; //查看所有记录的区块 ?>
-<?php } elseif($_GET['mode']=='select'){//select判断搜索mod?>
-       <?php include "struct/select.php";/*加载搜索页面*/ ?>
+<?php include "struct/global/header.php"; //全局Header
+if($_GET['mode'] == false){ //啥都没有，表示是主页  
+ } elseif($_GET['mode'] == 'script') { //script代表实际要对纪录进行修改 
+	include "struct/scriptAction.php"; //实际运行数据库程序的区块 
+ } elseif($_GET['mode'] == 'view'){ //view就是说浏览模式~
+	include "struct/viewRecord.php"; //查看所有记录的区块 
+ } elseif($_GET['mode']=='select'){//select判断搜索mod
+    include "struct/select.php";/*加载搜索页面*/}
+ elseif($_GET['mode']=='add'){//select判断搜索mod
+    include "struct/addNewName.php";/*加载搜索页面*/}
+ elseif($_GET['mode']=='delete'){//select判断搜索mod
+    include "struct/deleteRecord.php";/*加载搜索页面*/}	?>
 </body>
 </html>
