@@ -8,7 +8,6 @@ Andy-Lonly，furaiguburu版权所有
 
 <table>
   <tr>
-    <td>搜索黑屋记录</td>
     <td>niiUserSystem Enterprise整合</td>
   </tr>
 </table>
@@ -19,6 +18,7 @@ Andy-Lonly，furaiguburu版权所有
     <td>添加新的黑屋记录</td>
     <td>删除已有的黑屋记录</td>
     <td>查看现有的黑屋记录</td>
+    <td搜索现有的黑屋记录</td>
   </tr>
 </table>
 
