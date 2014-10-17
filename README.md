@@ -17,9 +17,11 @@ Andy-Lonly，furaiguburu版权所有
   <tr>
     <td>添加新的黑屋记录</td>
     <td>删除已有的黑屋记录</td>
-    <td>查看现有的黑屋记录</td>
-    <td搜索现有的黑屋记录</td>
   </tr>
+  <tr>
+    <td>查看现有的黑屋记录</td>
+    <td>搜索现有的黑屋记录</td>
+    </tr>
 </table>
 
 ###FAQ
