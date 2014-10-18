@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>黑屋系统</title>
 <link rel="stylesheet" type="text/css" href="style/main.css"/>
+<link href="style/form.css" rel="stylesheet" type="text/css"/>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
