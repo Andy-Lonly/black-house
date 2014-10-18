@@ -1,5 +1,3 @@
-<link href="/style/form.css" rel="stylesheet" type="text/css">
-<meta charset="utf-8">
 <fieldset class="formxd">
 <form method="post" action="?mode=script&action=deleteRecord">
   <input type="text" name="qqnum" placeholder="输入QQ号" required="required"  class="forminput" /><br>
