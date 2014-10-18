@@ -12,6 +12,18 @@
 	position: relative;
 	left: 27%;
 }
-.forminput {box-shadow:inset 3px 2px 1px #ACACAC;
+.forminput {box-shadow:inset 0px 0px 7px #ACACAC;
 border-radius:6px;
+}
+.formbutton {border-radius:8px;
+box-shadow:inset 0px 0px 2px #ACACAC
+}
+p{
+	padding:7px;
+	margin:0;
+	font-size:44px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	color:#999;
+	text-shadow: 1px 1px white,1px 1px #333;
 }
