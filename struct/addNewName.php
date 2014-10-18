@@ -1,5 +1,3 @@
-<link href="/style/form.css" rel="stylesheet" type="text/css">
-<meta charset="utf-8">
 <fieldset class="formxd">
 <form method="post" id="addNewRecForm" action="?mode=script&action=addNewRecord">
 	<input type="text" name="username" placeholder="用户名" required="required" class="forminput"/><br>
