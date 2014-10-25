@@ -48,6 +48,7 @@
 						}
 							echo'</tr>';
 					}
+					mysql_free_result($dbResult);
 			} else {
 				return false;	
 			}
