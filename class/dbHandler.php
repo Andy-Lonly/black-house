@@ -23,6 +23,7 @@
 			//用来运行Query的Method
 			//Result Type是返回的结果类型，可以选择：array、insertid或者bool还有numrows
 			//还可以是affectedrows。。。。
+			//rows用于表格
 			$dbResult = mysqli_query($this->connectionIdentifier,$query);
 			if($dbResult){
 				if($resultType == 'array'){
@@ -39,7 +40,14 @@
 					return mysqli_num_rows($dbResult);	
 				} elseif ($resultType == 'affectedrows') {
 					return mysqli_affected_rows($dbResult);	
-				}
+				}elseif ($resultType == 'rows') {
+					while ($row=mysql_fethch_row($dbResult)){
+						echo'<tr>';
+						foreach($row as $data){
+							echo '<td>'.$data.'</td>';
+						}
+							echo'</tr>';
+					}
 			} else {
 				return false;	
 			}
