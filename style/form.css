@@ -6,7 +6,11 @@
 	text-align:center;
 	border:10px solid #dedede;
 	border-radius:10px 13px 4px 17px;
+       -moz-border-radius:10px 13px 4px 17px;
+       -WebKit-border-radius:10px 13px 4px 17px;
 	box-shadow:5px 5ox 8px #06c;
+       -WebKit-box-shadow:5px 5ox 8px #06c;
+       -moz-box-shadow:5px 5ox 8px #06c;
 	background:rgba(225,225,225,0.64);
 	top: 10%;
 	position: relative;
@@ -14,9 +18,13 @@
 }
 .forminput {box-shadow:inset 0px 0px 7px #ACACAC;
 border-radius:6px;
+-moz-border-radius:6px;
+-WebKit-border-radius:6px;
 }
 .formbutton {border-radius:8px;
-box-shadow:inset 0px 0px 2px #ACACAC
+box-shadow:inset 0px 0px 2px #ACACAC;
+-moz-box-shadow:inset 0px 0px 2px #ACACAC;
+-webkit-box-shadow:inset 0px 0px 2px #ACACAC;
 }
 p{
 	padding:7px;
