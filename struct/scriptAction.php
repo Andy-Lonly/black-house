@@ -56,22 +56,14 @@
 $qq = $_POST["seler"];/* 接受表单信息 */
 
 if($_POST['seler'] == false){echo '<br>请填写查询对象' ;
-  } else
-   {$blackhouseinfo = mysql_query("SELECT name,qq,lv,info FROM andyinfo WHERE qq="+$qq);/* 搜索语法 */
+  } else{
 /* 下面将查询结果输出为表格形式展示 */
 echo '<table align="center" width="84%" border="5" bgcolor="#95FFAA" bordercolor="#FFFF1E" bordercolordark="#7D7D7D">';
 echo '<caption>黑屋查询信息</caption>';
 echo '<th>昵称</th><th>帐号</th><th>黑屋等级</th><th>原因</th>';
 /* 循环输出 */
-while ($row=mysql_fethch_row($blackhouseinfo)){
-	echo'<tr>';
-	foreach($row as $data){
-		echo '<td>'.$data.'</td>';
-	}
-	echo'</tr>';
-}
+$dbHandler->runQuery("SELECT name,qq,lv,info FROM andyinfo WHERE qq="+$qq,"rows");
 echo'</table>';
 /* 输出表单结束 */
-mysql_free_result($blackhouseinfo);/* 释放内存 */}
 }
 ?>
