@@ -62,7 +62,7 @@ echo '<table align="center" width="84%" border="5" bgcolor="#95FFAA" bordercolor
 echo '<caption>黑屋查询信息</caption>';
 echo '<th>昵称</th><th>帐号</th><th>黑屋等级</th><th>原因</th>';
 /* 循环输出 */
-$dbHandler->runQuery("SELECT name,qq,lv,info FROM andyinfo WHERE qq="+$qq,"rows");
+$dbHandler->runQuery("SELECT name,qq,lv,info FROM andyinfo WHERE qq='$qq'","rows");
 echo'</table>';
 /* 输出表单结束 */
 }
