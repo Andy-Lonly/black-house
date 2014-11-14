@@ -53,7 +53,7 @@
 
 <?php if($_GET['action']=='selectinfo'){/*后面放置搜索程序*/
 
-$qq = $_POST["seler"];/* 接受表单信息 */
+$qq = $_POST[ 'seler'];/* 接受表单信息 */
 
 if($_POST['seler'] == false){echo '<br>请填写查询对象' ;
   } else{
