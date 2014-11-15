@@ -42,6 +42,9 @@ A：各个作者在隐私条例或服务条例里都有提到这个问题，如�
 Q：<strong>黑屋系统是否安全，如果被人乱添加怎么办？</strong><br>
 A：登录系统由furaiguburu开发的商业级别的系统（感激不尽），而且如果阁下认为记录是乱添加的，阁下可以发起申诉，我们会对所有的动作进行记录。
 
+Q:<strong>是否会开放API端口</strong><br>
+A:还未确定
+
 Q：<strong>什么是niiUserSystem Enterprise？ 我可以使用吗？</strong><br>
 A：1，niiUserSystem Enterprise是商业级别的用户登录以及动作记录系统，是niiFramework Enterprise的分支。原本只用于Niyume，但是在深度合作的Web Application中也会植入此系统。2，对不起，niiUserSystem Enterprise并不对公众开放。但是niiUserSystem Basic是开源的项目。
 
